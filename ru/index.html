@@ -1,0 +1,674 @@
+<!-- BEGIN app/views/layouts/application.html.erb --><!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Tolstoi 13 — бар на Толстого, 13 · Тбилиси</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Tolstoi 13 — бар на улице Толстого, 13 в Тбилиси. Шесть кранов пива, крафт, винная коллекция, кухня к пиву, караоке по средам и концерты по субботам.">
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="rVog_2J51_14-pYoxsY-PaQoFamkfl-h3Qjwowdhhzdm72aUTielAY_Zdlqmve0ycns-WT-dPrzecqTRLhKlhw" />
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@400;500;600&family=Yellowtail&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/application-6a0b8162.css" data-turbo-track="reload" />
+    <script type="importmap" data-turbo-track="reload">{
+  "imports": {
+    "application": "/assets/application-bfcdf840.js",
+    "@hotwired/turbo-rails": "/assets/turbo.min-9fd88cd5.js",
+    "@hotwired/stimulus": "/assets/stimulus.min-4b1e420e.js",
+    "@hotwired/stimulus-loading": "/assets/stimulus-loading-1fc53fe7.js",
+    "controllers/application": "/assets/controllers/application-3affb389.js",
+    "controllers/hello_controller": "/assets/controllers/hello_controller-708796bd.js",
+    "controllers": "/assets/controllers/index-ee64e1f1.js",
+    "controllers/nav_controller": "/assets/controllers/nav_controller-94d4a9fb.js"
+  }
+}</script>
+<link rel="modulepreload" href="/assets/application-bfcdf840.js">
+<link rel="modulepreload" href="/assets/turbo.min-9fd88cd5.js">
+<link rel="modulepreload" href="/assets/stimulus.min-4b1e420e.js">
+<link rel="modulepreload" href="/assets/stimulus-loading-1fc53fe7.js">
+<link rel="modulepreload" href="/assets/controllers/application-3affb389.js">
+<link rel="modulepreload" href="/assets/controllers/hello_controller-708796bd.js">
+<link rel="modulepreload" href="/assets/controllers/index-ee64e1f1.js">
+<link rel="modulepreload" href="/assets/controllers/nav_controller-94d4a9fb.js">
+<script type="module">import "application"</script>
+  </head>
+
+  <body data-controller="nav">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#top" class="logo" data-action="nav#close">
+          Tolstoi <span class="logo-num">13</span>
+        </a>
+
+        <nav class="main-nav" data-nav-target="menu">
+          <a href="#about" data-action="nav#close">О баре</a>
+          <a href="#history" data-action="nav#close">История</a>
+          <a href="#menu" data-action="nav#close">Меню</a>
+          <a href="#events" data-action="nav#close">События</a>
+          <a href="#faq" data-action="nav#close">FAQ</a>
+          <a href="#contacts" data-action="nav#close">Контакты</a>
+          <a href="tel:+995544997939" class="btn btn-outline nav-cta" data-action="nav#close">Забронировать стол</a>
+        </nav>
+
+        <div class="lang-switch">
+              <a href="/">KA</a>
+              <a href="/en">EN</a>
+              <a href="/uk">UK</a>
+              <span class="active">RU</span>
+              <a href="/es">ES</a>
+        </div>
+
+        <button class="burger" type="button" aria-label="Menu" data-action="nav#toggle">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- BEGIN app/views/pages/home.html.erb -->
+<section class="hero">
+  <div class="hero-photo" style="background-image: url('/assets/hero-375ea9f3.jpg')" aria-hidden="true"></div>
+  <div class="hero-num" aria-hidden="true">13</div>
+  <div class="container hero-inner">
+    <p class="hero-kicker">Bar · Kitchen · Cocktails · Тбилиси</p>
+    <h1>Все счастливые бары<br>похожи друг на друга.</h1>
+    <p class="hero-sub">Каждый вечер в Tolstoi 13 — счастливый по-своему. Бар на улице Толстого, 13: разливное и крафтовое пиво, винный погреб в цоколе и честная кухня — рёбра, копчёности и рыба к пиву.</p>
+    <div class="hero-actions">
+      <a href="#menu" class="btn btn-primary">Смотреть меню</a>
+      <a href="tel:+995544997939" class="btn btn-outline">Забронировать стол</a>
+    </div>
+    <p class="hero-hours">Открыты каждый день · 15:00 — 00:00</p>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+        <span>Разливное пиво</span><i>✦</i>
+        <span>Крафт и сидр</span><i>✦</i>
+        <span>Винный погреб</span><i>✦</i>
+        <span>Копчёности и рыба</span><i>✦</i>
+        <span>Разговоры до полуночи</span><i>✦</i>
+        <span>Толстого, 13</span><i>✦</i>
+        <span>Разливное пиво</span><i>✦</i>
+        <span>Крафт и сидр</span><i>✦</i>
+        <span>Винный погреб</span><i>✦</i>
+        <span>Копчёности и рыба</span><i>✦</i>
+        <span>Разговоры до полуночи</span><i>✦</i>
+        <span>Толстого, 13</span><i>✦</i>
+  </div>
+</div>
+
+<section id="about" class="section">
+  <div class="container">
+    <p class="section-kicker">О баре</p>
+    <h2>Пиво, вино и кухня<br>на Толстого, 13</h2>
+    <p class="about-lead">Шесть кранов разливного, локальный крафт и сидры, винная коллекция в цокольном этаже и еда, с которой пиво пьётся лучше, — рёбра, копчёности, рыба. Дресс-кода и фейсконтроля нет. Просто заходите.</p>
+
+    <div class="gallery">
+        <figure class="gallery-item">
+          <img alt="Площадь Воронцова, XIX век — роспись ручной работы" loading="lazy" src="/assets/mural-909747e5.jpg" />
+          <figcaption>Площадь Воронцова, XIX век — роспись ручной работы</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img alt="Наливаем честно — четырьмя способами" loading="lazy" src="/assets/mug-86655516.jpg" />
+          <figcaption>Наливаем честно — четырьмя способами</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img alt="Вход с Толстого, 13" loading="lazy" src="/assets/entrance-5e5e6631.jpg" />
+          <figcaption>Вход с Толстого, 13</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img alt="Винная коллекция в цоколе" loading="lazy" src="/assets/cellar-fd5bc211.jpg" />
+          <figcaption>Винная коллекция в цоколе</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img alt="Копчёности к пиву — натуральные и свои" loading="lazy" src="/assets/snacks-93cf28ed.jpg" />
+          <figcaption>Копчёности к пиву — натуральные и свои</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img alt="Домино, нарды и настолки — спросите у бара" loading="lazy" src="/assets/domino-af0f4e1f.jpg" />
+          <figcaption>Домино, нарды и настолки — спросите у бара</figcaption>
+        </figure>
+    </div>
+
+    <div class="pours">
+      <h3 class="pours-title">Четыре способа налить пиво</h3>
+      <p class="pours-sub">Наливаем по-чешски. Скажите бармену, как вам сегодня:</p>
+      <div class="pours-grid">
+          <div class="pour">
+            <div class="pour-glass pour-hladinka" aria-hidden="true"></div>
+            <h4>На хладинку</h4>
+            <p>Классика: плотная пенная шапка в два пальца, под ней — пиво. Так наливаем по умолчанию.</p>
+          </div>
+          <div class="pour">
+            <div class="pour-glass pour-shnit" aria-hidden="true"></div>
+            <h4>Шнит</h4>
+            <p>Полпорции в большом бокале: пиво, пена и воздух. Попробовать новый кран или «ещё одно — и всё».</p>
+          </div>
+          <div class="pour">
+            <div class="pour-glass pour-mleko" aria-hidden="true"></div>
+            <h4>Млеко</h4>
+            <p>Бокал нежной сладковатой пены. Пьётся залпом, пока не осела.</p>
+          </div>
+          <div class="pour">
+            <div class="pour-glass pour-chokhton" aria-hidden="true"></div>
+            <h4>Чохтон</h4>
+            <p>Почти без пены, пива — до краёв. Для тех, кто просит «без пены, пожалуйста».</p>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="history" class="section section-alt">
+  <div class="container history-grid">
+    <div class="history-text">
+      <p class="section-kicker">История</p>
+      <h2>Толстой здесь<br>действительно ходил</h2>
+      <p>В 1851 году молодой Лев Толстой приехал на Кавказ и поселился в немецкой колонии Ной-Тифлис — нынешнем районе Чугурети. Он снимал квартиру в доме на Михайловском проспекте (сегодня это проспект Давида Агмашенебели, 52) и именно там работал над своей первой повестью — «Детство».</p>
+      <p>Улица, носящая имя писателя, пересекает этот проспект всего в 150 метрах от его дома. Больше двух месяцев Толстой ежедневно гулял по соседним кварталам Ной-Тифлиса, ходил к Куре и через Воронцовский мост добирался в центр города. Та самая площадь Воронцова есть и на росписи у наших кранов — ручная работа, вид XIX века: сразу за площадью начинается наша улица.</p>
+      <p>Самой улицы Толстого тогда ещё не существовало — но его сапоги эту землю определённо топтали. Теперь на этой земле наливаем мы.</p>
+    </div>
+    <aside class="history-facts">
+      <figure class="history-photo">
+        <img alt="Старые дома с резными балконами в Тбилиси" loading="lazy" src="/assets/tbilisi-d445eee4.jpg" />
+        <figcaption>Старый Тбилиси — эти балконы Толстой ещё застал</figcaption>
+      </figure>
+        <div class="fact">
+          <span class="fact-num">1851</span>
+          <p>год, когда Толстой поселился в Ной-Тифлисе</p>
+        </div>
+        <div class="fact">
+          <span class="fact-num">150 м</span>
+          <p>от нашей улицы до дома, где он жил и писал</p>
+        </div>
+        <div class="fact">
+          <span class="fact-num">«Детство»</span>
+          <p>первая повесть писателя, начатая в Тифлисе</p>
+        </div>
+    </aside>
+  </div>
+</section>
+
+<section id="menu" class="section">
+  <div class="container">
+    <p class="section-kicker">Меню</p>
+    <h2>Bar · Kitchen · Cocktails</h2>
+
+    <div class="menu-flow">
+        <div class="menu-group">
+          <h3 class="menu-title">Пиво <span class="badge">18+</span></h3>
+            <ul class="menu-list">
+                <li>
+                  <span class="menu-name">Herzeg</span>
+                    <span class="dots"></span><span class="price">5 / 6 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Wetzel</span>
+                    <span class="dots"></span><span class="price">5 / 6 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Argo</span>
+                    <span class="dots"></span><span class="price">5 / 6 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Bergbrau</span>
+                    <span class="dots"></span><span class="price">5 / 7 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Starnberger</span>
+                    <span class="dots"></span><span class="price">6 / 8 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">12 Marcvali</span>
+                    <span class="dots"></span><span class="price">7 / 9 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Germanuli</span>
+                    <span class="dots"></span><span class="price">5 / 6 ₾</span>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-group">
+          <h3 class="menu-title">Крафтовое пиво <span class="badge">18+</span></h3>
+            <ul class="menu-list">
+                <li>
+                  <span class="menu-name">Ich Will</span>
+                    <span class="dots"></span><span class="price">10 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Lost Aviator</span>
+                    <span class="dots"></span><span class="price">10 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Hawai’i</span>
+                    <span class="dots"></span><span class="price">10 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Foxxy</span>
+                    <span class="dots"></span><span class="price">10 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Quadrupel</span>
+                    <span class="dots"></span><span class="price">15 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Lager</span>
+                    <span class="dots"></span><span class="price">15 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Wheat beer</span>
+                    <span class="dots"></span><span class="price">15 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">IPA</span>
+                    <span class="dots"></span><span class="price">15 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Session IPA</span>
+                    <span class="dots"></span><span class="price">15 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Stout</span>
+                    <span class="dots"></span><span class="price">15 ₾</span>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-group">
+          <h3 class="menu-title">Безалкогольное пиво</h3>
+            <ul class="menu-list">
+                <li>
+                  <span class="menu-name">Ginger beer</span>
+                    <span class="dots"></span><span class="price">15 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Non alco APA</span>
+                    <span class="dots"></span><span class="price">15 ₾</span>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-group">
+          <h3 class="menu-title">Сидр <span class="badge">18+</span></h3>
+            <ul class="menu-list">
+                <li>
+                  <span class="menu-name">Cider magnum</span>
+                    <span class="dots"></span><span class="price">15 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Яблочный классический<em>полусладкий</em></span>
+                    <span class="dots"></span><span class="price">15 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Яблочный с грушей</span>
+                    <span class="dots"></span><span class="price">15 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Яблочный с вишней</span>
+                    <span class="dots"></span><span class="price">15 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Яблочный с клюквой</span>
+                    <span class="dots"></span><span class="price">15 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Яблочный с чёрной смородиной</span>
+                    <span class="dots"></span><span class="price">15 ₾</span>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-group">
+          <h3 class="menu-title">Крепкий алкоголь <span class="badge">18+</span></h3>
+            <ul class="menu-list">
+                <li>
+                  <span class="menu-name">Водка<em>Nemiroff 30 · Absolut 60 · Хортица 25 · Столичная 50</em></span>
+                </li>
+                <li>
+                  <span class="menu-name">Чача<em>классическая 0.5 л — 25 · домашняя — 5 / 10</em></span>
+                </li>
+                <li>
+                  <span class="menu-name">Виски<em>Jameson 15/100 · Jack Daniel’s 17/150/180 · Black Label 20/170</em></span>
+                </li>
+                <li>
+                  <span class="menu-name">Ликёр<em>Baileys 15 / 150</em></span>
+                </li>
+                <li>
+                  <span class="menu-name">Ром<em>Captain Morgan 15 / 100</em></span>
+                </li>
+                <li>
+                  <span class="menu-name">Джин<em>Bombay Sapphire 15 / 120</em></span>
+                </li>
+                <li>
+                  <span class="menu-name">Коньяк<em>Askaneli 10/100 · Hennessy VSOP 30/300</em></span>
+                </li>
+                <li>
+                  <span class="menu-name">Текила<em>Jose Cuervo Especial 15 / 150</em></span>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-group">
+          <h3 class="menu-title">Коктейли <span class="badge">18+</span></h3>
+            <ul class="menu-list">
+                <li>
+                  <span class="menu-name">Gin &amp; Tonic</span>
+                    <span class="dots"></span><span class="price">18 / 21 / 24 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Whiskey &amp; Cola</span>
+                    <span class="dots"></span><span class="price">18 / 21 / 24 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Vodka &amp; Tonic</span>
+                    <span class="dots"></span><span class="price">18 / 21 / 24 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Cognac &amp; Cola</span>
+                    <span class="dots"></span><span class="price">18 / 21 / 24 ₾</span>
+                </li>
+            </ul>
+            <p class="menu-group-note">Актуальный ассортимент коктейлей уточняйте на баре.</p>
+        </div>
+        <div class="menu-group menu-wine">
+          <h3 class="menu-title">Винная коллекция <span class="badge">18+</span></h3>
+            <img alt="Бутылки квеври-вина на полке" loading="lazy" src="/assets/winebottles-caa6f89c.jpg" />
+            <p class="menu-group-note">Посетите наш уютный цокольный этаж и познакомьтесь с нашей коллекцией вин. 🍷</p>
+        </div>
+        <div class="menu-group">
+          <h3 class="menu-title">Блюда</h3>
+            <ul class="menu-list">
+                <li>
+                  <span class="menu-name">Сосиски варёные<em>порция ~800 г</em></span>
+                    <span class="dots"></span><span class="price">35 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Рёбра свиные<em>порция ~1000 г</em></span>
+                    <span class="dots"></span><span class="price">50 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Копчёные куриные крылья</span>
+                    <span class="dots"></span><span class="price">20 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Копчёный куриный окорок</span>
+                    <span class="dots"></span><span class="price">15 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Хлеб</span>
+                    <span class="dots"></span><span class="price">3 ₾</span>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-group">
+          <h3 class="menu-title">Соусы</h3>
+            <ul class="menu-list">
+                <li>
+                  <span class="menu-name">Горчица</span>
+                    <span class="dots"></span><span class="price">3 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Сацебели</span>
+                    <span class="dots"></span><span class="price">3 ₾</span>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-group">
+          <h3 class="menu-title">Рыба</h3>
+            <ul class="menu-list">
+                <li>
+                  <span class="menu-name">Хамса</span>
+                    <span class="dots"></span><span class="price">5 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Лещ</span>
+                    <span class="dots"></span><span class="price">10 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Сига</span>
+                    <span class="dots"></span><span class="price">8 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Скумбрия</span>
+                    <span class="dots"></span><span class="price">15 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Ребец</span>
+                    <span class="dots"></span><span class="price">6 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Вобла</span>
+                    <span class="dots"></span><span class="price">6 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Кальмары</span>
+                    <span class="dots"></span><span class="price">17 ₾</span>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-group">
+          <h3 class="menu-title">Закуски</h3>
+            <ul class="menu-list">
+                <li>
+                  <span class="menu-name">Суджук армянский</span>
+                    <span class="dots"></span><span class="price">40 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Сыр чечил копчёный</span>
+                    <span class="dots"></span><span class="price">3.5 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Джерки куриные</span>
+                    <span class="dots"></span><span class="price">15 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Джерки свиные</span>
+                    <span class="dots"></span><span class="price">17 ₾</span>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-group">
+          <h3 class="menu-title">Без алкоголя</h3>
+            <ul class="menu-list">
+                <li>
+                  <span class="menu-name">Cola / Fanta / Sprite / Tonic<em>бутылка 2.2 · банка 2 · стекло 2.5</em></span>
+                </li>
+                <li>
+                  <span class="menu-name">Кофе по-турецки</span>
+                    <span class="dots"></span><span class="price">5 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Чай</span>
+                    <span class="dots"></span><span class="price">4 / 10 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Холодный чай<em>ромашка-манго · персик · манго-ананас</em></span>
+                    <span class="dots"></span><span class="price">2.5 – 3 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Фруктовые напитки<em>яблоко · лесные ягоды · грейпфрут · апельсин · вишня</em></span>
+                    <span class="dots"></span><span class="price">3.5 ₾</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <p class="menu-note">Цены в лари. Меню также доступно на грузинском и английском — спросите у бармена.</p>
+  </div>
+</section>
+
+<section class="quote">
+  <div class="container">
+    <blockquote>
+      «Если уж искать смысл жизни, то где-то между первым и вторым бокалом.»
+      <cite>— почти Лев Толстой</cite>
+    </blockquote>
+  </div>
+</section>
+
+<section id="events" class="section">
+  <div class="container">
+    <p class="section-kicker">События</p>
+    <h2>Что происходит на Толстого, 13</h2>
+    <div class="events">
+        <article class="event">
+          <div class="event-photo">
+            <img alt="Проектор в тёмной комнате" loading="lazy" src="/assets/cinema-22df5e44.jpg" />
+          </div>
+          <div class="event-body">
+            <span class="event-day">Понедельник</span>
+            <h3>Вечер кино</h3>
+            <p>Лечим понедельник кино на большом экране. Что смотрим — подскажет афиша в инстаграме.</p>
+          </div>
+        </article>
+        <article class="event">
+          <div class="event-photo">
+            <img alt="Микрофон в свете прожектора" loading="lazy" src="/assets/karaoke-bf841109.jpg" />
+          </div>
+          <div class="event-body">
+            <span class="event-day">Среда</span>
+            <h3>Караоке</h3>
+            <p>Каждую среду микрофон переходит к гостям. Петь можно что угодно — от шансона до Queen, храбрость наливаем у бара.</p>
+          </div>
+        </article>
+        <article class="event">
+          <div class="event-photo">
+            <img alt="Живой концерт в баре: гитарист у микрофона" loading="lazy" src="/assets/blues-ddbc2cdb.jpg" />
+          </div>
+          <div class="event-body">
+            <span class="event-day">Суббота</span>
+            <h3>Концерты</h3>
+            <p>Каждую субботу — живая музыка или диджей-пати: от блюза до танцев до закрытия. Афиша — в нашем инстаграме, приходите пораньше: места у сцены разбирают первыми.</p>
+          </div>
+        </article>
+        <article class="event">
+          <div class="event-photo">
+            <img alt="Гости смотрят футбольную трансляцию на большом экране в баре" loading="lazy" src="/assets/sport-870e4937.jpg" />
+          </div>
+          <div class="event-body">
+            <span class="event-day">А ещё</span>
+            <h3>Спорт, квизы, игры</h3>
+            <p>Большие матчи показываем сразу на двух этажах, время от времени собираем квизы и настольные игры. Анонсы — в инстаграме.</p>
+          </div>
+        </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <p class="section-kicker">Отзывы</p>
+    <h2>Говорят гости</h2>
+    <div class="reviews">
+        <figure class="review">
+          <div class="stars" aria-label="5/5">★★★★★</div>
+          <blockquote>Зашли на один бокал, ушли под самое закрытие. Спустились в винный погреб «просто посмотреть» — сами понимаете, чем кончилось.</blockquote>
+          <figcaption>Ника, Тбилиси</figcaption>
+        </figure>
+        <figure class="review">
+          <div class="stars" aria-label="5/5">★★★★★</div>
+          <blockquote>Тот редкий бар, где не орёт музыка и слышно собеседника. Свиные рёбра на кило — берите одни на двоих, не ошибётесь.</blockquote>
+          <figcaption>Olga, Kyiv</figcaption>
+        </figure>
+        <figure class="review">
+          <div class="stars" aria-label="5/5">★★★★★</div>
+          <blockquote>Домашняя чача и суджук — сочетание, ради которого стоит перейти Куру. Идеальное место, вернёмся.</blockquote>
+          <figcaption>Дато, Тбилиси</figcaption>
+        </figure>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="section">
+  <div class="container container-narrow">
+    <p class="section-kicker">FAQ</p>
+    <h2>Частые вопросы</h2>
+    <div class="faq">
+        <details>
+          <summary>Нужно ли бронировать стол?</summary>
+          <p>В будни обычно есть места, а в пятницу, субботу и на караоке по средам лучше позвонить — <a href="tel:+995544997939">+995 544 99 79 39</a> — или написать в Instagram <a href="https://www.instagram.com/bartolstoi13" target="_blank" rel="noopener">@bartolstoi13</a>.</p>
+        </details>
+        <details>
+          <summary>Что взять к пиву?</summary>
+          <p>Классика — копчёные крылья или рыба: от хамсы до кальмаров. Большой компанией берите свиные рёбра, порция около килограмма.</p>
+        </details>
+        <details>
+          <summary>Есть ли безалкогольные напитки?</summary>
+          <p>Да: безалкогольное пиво (имбирное и APA), холодный чай — ромашка-манго, персик, манго-ананас, — фруктовые напитки, чай и кофе по-турецки.</p>
+        </details>
+        <details>
+          <summary>Принимаете ли карты?</summary>
+          <p>Принимаем карты, Apple Pay и Google Pay. Наличные лари тоже любим.</p>
+        </details>
+    </div>
+  </div>
+</section>
+
+<section id="contacts" class="section section-alt">
+  <div class="container">
+    <p class="section-kicker">Контакты</p>
+    <h2>Как нас найти</h2>
+    <div class="contacts">
+      <div class="contact-card">
+        <h3>Адрес</h3>
+        <p>ул. Льва Толстого, 13<br>Чугурети, Тбилиси</p>
+        <a class="btn btn-outline" href="https://maps.app.goo.gl/d6UiW9b7LP6tiaUaA" target="_blank" rel="noopener">Открыть на карте</a>
+      </div>
+      <div class="contact-card">
+        <h3>Часы работы</h3>
+        <p>Понедельник — воскресенье<br>15:00 — 00:00</p>
+      </div>
+      <div class="contact-card">
+        <h3>Бронь и вопросы</h3>
+        <p>
+          <a href="tel:+995544997939">+995 544 99 79 39</a><br>
+          <span class="contact-note">на этом же номере Telegram и WhatsApp</span>
+        </p>
+        <p class="contact-links">
+          <a href="https://t.me/+995544997939" target="_blank" rel="noopener">Telegram</a>
+          <a href="https://wa.me/995544997939" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="https://www.instagram.com/bartolstoi13" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/profile.php?id=61577458991324" target="_blank" rel="noopener">Facebook</a>
+          <a href="mailto:tolstoilev13@gmail.com">tolstoilev13@gmail.com</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END app/views/pages/home.html.erb -->
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <span class="logo">Tolstoi <span class="logo-num">13</span></span>
+          <p>Все счастливые вечера похожи друг на друга.<br>Наши — начинаются здесь.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Адрес</h4>
+          <p>ул. Льва Толстого, 13<br>Чугурети, Тбилиси</p>
+        </div>
+        <div class="footer-col">
+          <h4>Часы работы</h4>
+          <p>Пн — Вс<br>15:00 — 00:00</p>
+        </div>
+        <div class="footer-col">
+          <h4>Связь</h4>
+          <p>
+            <a href="tel:+995544997939">+995 544 99 79 39</a><br>
+            <a href="mailto:tolstoilev13@gmail.com">tolstoilev13@gmail.com</a><br>
+            <a href="https://www.instagram.com/bartolstoi13" target="_blank" rel="noopener">Instagram</a> ·
+            <a href="https://t.me/+995544997939" target="_blank" rel="noopener">Telegram</a> ·
+            <a href="https://wa.me/995544997939" target="_blank" rel="noopener">WhatsApp</a> ·
+            <a href="https://www.facebook.com/profile.php?id=61577458991324" target="_blank" rel="noopener">Facebook</a>
+          </p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 Tolstoi 13</span>
+        <span class="footer-18">18+ · Чрезмерное употребление алкоголя вредит вашему здоровью</span>
+      </div>
+    </footer>
+  </body>
+</html>
+<!-- END app/views/layouts/application.html.erb -->

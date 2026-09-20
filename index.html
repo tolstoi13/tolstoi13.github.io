@@ -1,0 +1,674 @@
+<!-- BEGIN app/views/layouts/application.html.erb --><!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <title>Tolstoi 13 — ბარი ტოლსტოის ქუჩა 13-ზე · თბილისი</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Tolstoi 13 — ბარი ლევ ტოლსტოის ქუჩა 13-ზე, თბილისში. ლუდის ექვსი ონკანი, კრაფტი, ღვინის კოლექცია, საჭმელი ლუდთან, კარაოკე ოთხშაბათობით და კონცერტები შაბათობით.">
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="dcc72J4k3zyVCbdmQN9NNEpfbBx4mSsuuBCTTfMahgJvBD3Z3bjJw4U44qzbWaHmdbSMwaNe-MczCMpGPIDF-g" />
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@400;500;600&family=Yellowtail&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/application-6a0b8162.css" data-turbo-track="reload" />
+    <script type="importmap" data-turbo-track="reload">{
+  "imports": {
+    "application": "/assets/application-bfcdf840.js",
+    "@hotwired/turbo-rails": "/assets/turbo.min-9fd88cd5.js",
+    "@hotwired/stimulus": "/assets/stimulus.min-4b1e420e.js",
+    "@hotwired/stimulus-loading": "/assets/stimulus-loading-1fc53fe7.js",
+    "controllers/application": "/assets/controllers/application-3affb389.js",
+    "controllers/hello_controller": "/assets/controllers/hello_controller-708796bd.js",
+    "controllers": "/assets/controllers/index-ee64e1f1.js",
+    "controllers/nav_controller": "/assets/controllers/nav_controller-94d4a9fb.js"
+  }
+}</script>
+<link rel="modulepreload" href="/assets/application-bfcdf840.js">
+<link rel="modulepreload" href="/assets/turbo.min-9fd88cd5.js">
+<link rel="modulepreload" href="/assets/stimulus.min-4b1e420e.js">
+<link rel="modulepreload" href="/assets/stimulus-loading-1fc53fe7.js">
+<link rel="modulepreload" href="/assets/controllers/application-3affb389.js">
+<link rel="modulepreload" href="/assets/controllers/hello_controller-708796bd.js">
+<link rel="modulepreload" href="/assets/controllers/index-ee64e1f1.js">
+<link rel="modulepreload" href="/assets/controllers/nav_controller-94d4a9fb.js">
+<script type="module">import "application"</script>
+  </head>
+
+  <body data-controller="nav">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#top" class="logo" data-action="nav#close">
+          Tolstoi <span class="logo-num">13</span>
+        </a>
+
+        <nav class="main-nav" data-nav-target="menu">
+          <a href="#about" data-action="nav#close">ჩვენ შესახებ</a>
+          <a href="#history" data-action="nav#close">ისტორია</a>
+          <a href="#menu" data-action="nav#close">მენიუ</a>
+          <a href="#events" data-action="nav#close">ღონისძიებები</a>
+          <a href="#faq" data-action="nav#close">FAQ</a>
+          <a href="#contacts" data-action="nav#close">კონტაქტი</a>
+          <a href="tel:+995544997939" class="btn btn-outline nav-cta" data-action="nav#close">მაგიდის დაჯავშნა</a>
+        </nav>
+
+        <div class="lang-switch">
+              <span class="active">KA</span>
+              <a href="/en">EN</a>
+              <a href="/uk">UK</a>
+              <a href="/ru">RU</a>
+              <a href="/es">ES</a>
+        </div>
+
+        <button class="burger" type="button" aria-label="Menu" data-action="nav#toggle">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- BEGIN app/views/pages/home.html.erb -->
+<section class="hero">
+  <div class="hero-photo" style="background-image: url('/assets/hero-375ea9f3.jpg')" aria-hidden="true"></div>
+  <div class="hero-num" aria-hidden="true">13</div>
+  <div class="container hero-inner">
+    <p class="hero-kicker">Bar · Kitchen · Cocktails · თბილისი</p>
+    <h1>ყველა ბედნიერი ბარი<br>ერთმანეთს ჰგავს.</h1>
+    <p class="hero-sub">Tolstoi 13-ში ყოველი საღამო თავისებურად ბედნიერია. ბარი ტოლსტოის ქუჩა 13-ზე: ჩამოსასხმელი და კრაფტული ლუდი, ღვინის მარანი სარდაფში და გულწრფელი სამზარეულო — ნეკნები, შებოლილი ხორცი და თევზი ლუდთან.</p>
+    <div class="hero-actions">
+      <a href="#menu" class="btn btn-primary">მენიუს ნახვა</a>
+      <a href="tel:+995544997939" class="btn btn-outline">მაგიდის დაჯავშნა</a>
+    </div>
+    <p class="hero-hours">ღია ვართ ყოველდღე · 15:00 — 00:00</p>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+        <span>ჩამოსასხმელი ლუდი</span><i>✦</i>
+        <span>კრაფტი და სიდრი</span><i>✦</i>
+        <span>ღვინის მარანი</span><i>✦</i>
+        <span>შებოლილი ხორცი და თევზი</span><i>✦</i>
+        <span>საუბრები შუაღამემდე</span><i>✦</i>
+        <span>ტოლსტოის 13</span><i>✦</i>
+        <span>ჩამოსასხმელი ლუდი</span><i>✦</i>
+        <span>კრაფტი და სიდრი</span><i>✦</i>
+        <span>ღვინის მარანი</span><i>✦</i>
+        <span>შებოლილი ხორცი და თევზი</span><i>✦</i>
+        <span>საუბრები შუაღამემდე</span><i>✦</i>
+        <span>ტოლსტოის 13</span><i>✦</i>
+  </div>
+</div>
+
+<section id="about" class="section">
+  <div class="container">
+    <p class="section-kicker">ჩვენ შესახებ</p>
+    <h2>ლუდი, ღვინო და სამზარეულო<br>ტოლსტოის 13-ში</h2>
+    <p class="about-lead">ექვსი ონკანი ჩამოსასხმელი ლუდი, ადგილობრივი კრაფტი და სიდრი, ღვინის კოლექცია სარდაფში და საჭმელი, რომელთანაც ლუდი უკეთესად მიდის — ნეკნები, შებოლილი ხორცი, თევზი. დრეს-კოდი და ფეისკონტროლი არ გვაქვს. უბრალოდ შემოდით.</p>
+
+    <div class="gallery">
+        <figure class="gallery-item">
+          <img alt="ვორონცოვის მოედანი, XIX საუკუნე — ხელით მოხატული კედელი" loading="lazy" src="/assets/mural-909747e5.jpg" />
+          <figcaption>ვორონცოვის მოედანი, XIX საუკუნე — ხელით მოხატული კედელი</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img alt="ვასხამთ პატიოსნად — ოთხი წესით" loading="lazy" src="/assets/mug-86655516.jpg" />
+          <figcaption>ვასხამთ პატიოსნად — ოთხი წესით</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img alt="შესასვლელი ტოლსტოის 13-დან" loading="lazy" src="/assets/entrance-5e5e6631.jpg" />
+          <figcaption>შესასვლელი ტოლსტოის 13-დან</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img alt="ღვინის კოლექცია სარდაფში" loading="lazy" src="/assets/cellar-fd5bc211.jpg" />
+          <figcaption>ღვინის კოლექცია სარდაფში</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img alt="შებოლილი წასახემსებელი ლუდთან — ნატურალური და ჩვენი" loading="lazy" src="/assets/snacks-93cf28ed.jpg" />
+          <figcaption>შებოლილი წასახემსებელი ლუდთან — ნატურალური და ჩვენი</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img alt="დომინო, ნარდი და სამაგიდო თამაშები — ჰკითხეთ ბარში" loading="lazy" src="/assets/domino-af0f4e1f.jpg" />
+          <figcaption>დომინო, ნარდი და სამაგიდო თამაშები — ჰკითხეთ ბარში</figcaption>
+        </figure>
+    </div>
+
+    <div class="pours">
+      <h3 class="pours-title">ლუდის ჩამოსხმის ოთხი წესი</h3>
+      <p class="pours-sub">ვასხამთ ჩეხურად. უთხარით ბარმენს, როგორ გინდათ დღეს:</p>
+      <div class="pours-grid">
+          <div class="pour">
+            <div class="pour-glass pour-hladinka" aria-hidden="true"></div>
+            <h4>ჰლადინკა</h4>
+            <p>კლასიკა: ორი თითის სქელი ქაფის ქუდი, ქვემოთ — ლუდი. ასე ვასხამთ ჩვეულებრივ.</p>
+          </div>
+          <div class="pour">
+            <div class="pour-glass pour-shnit" aria-hidden="true"></div>
+            <h4>შნიტი</h4>
+            <p>ნახევარი პორცია დიდ ჭიქაში: ლუდი, ქაფი და ჰაერი. ახალი ონკანის გასასინჯად ან „კიდევ ერთი — და მორჩა“.</p>
+          </div>
+          <div class="pour">
+            <div class="pour-glass pour-mleko" aria-hidden="true"></div>
+            <h4>მლეკო</h4>
+            <p>ჭიქა ნაზი, მოტკბო ქაფი. ისმევა ერთი მოსმით, სანამ არ დაჯდება.</p>
+          </div>
+          <div class="pour">
+            <div class="pour-glass pour-chokhton" aria-hidden="true"></div>
+            <h4>ჩოხტანი</h4>
+            <p>თითქმის უქაფოდ, ლუდი — პირამდე. მათთვის, ვინც ითხოვს „უქაფოდ, თუ შეიძლება“.</p>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="history" class="section section-alt">
+  <div class="container history-grid">
+    <div class="history-text">
+      <p class="section-kicker">ისტორია</p>
+      <h2>ტოლსტოი აქ<br>მართლა დადიოდა</h2>
+      <p>1851 წელს ახალგაზრდა ლევ ტოლსტოი კავკასიაში ჩამოვიდა და გერმანულ კოლონია ნოი-ტიფლისში — დღევანდელ ჩუღურეთში — დასახლდა. ის ბინას ქირაობდა მიხეილის პროსპექტზე (დღეს — დავით აღმაშენებლის გამზირი, 52) და სწორედ იქ მუშაობდა თავის პირველ მოთხრობაზე — „ბავშვობაზე“.</p>
+      <p>მწერლის სახელობის ქუჩა ამ გამზირს მისი სახლიდან სულ 150 მეტრში კვეთს. ორ თვეზე მეტხანს ტოლსტოი ყოველდღე სეირნობდა ნოი-ტიფლისის მეზობელ კვარტლებში, დადიოდა მტკვართან და ვორონცოვის ხიდით ქალაქის ცენტრში გადადიოდა. ის ვორონცოვის მოედანი ჩვენს ონკანებთან მოხატულ კედელზეც არის — ხელნაკეთი ნამუშევარი, XIX საუკუნის ხედი: მოედნის მიღმა ჩვენი ქუჩა იწყება.</p>
+      <p>თავად ტოლსტოის ქუჩა მაშინ ჯერ არ არსებობდა — მაგრამ მისი ჩექმები ამ მიწას ნამდვილად თელავდა. ახლა ამ მიწაზე ჩვენ ვასხამთ.</p>
+    </div>
+    <aside class="history-facts">
+      <figure class="history-photo">
+        <img alt="ძველი სახლები მოჩუქურთმებული აივნებით თბილისში" loading="lazy" src="/assets/tbilisi-d445eee4.jpg" />
+        <figcaption>ძველი თბილისი — ეს აივნები ტოლსტოიმაც მოასწრო</figcaption>
+      </figure>
+        <div class="fact">
+          <span class="fact-num">1851</span>
+          <p>წელი, როცა ტოლსტოი ნოი-ტიფლისში დასახლდა</p>
+        </div>
+        <div class="fact">
+          <span class="fact-num">150 მ</span>
+          <p>ჩვენი ქუჩიდან სახლამდე, სადაც ის ცხოვრობდა და წერდა</p>
+        </div>
+        <div class="fact">
+          <span class="fact-num">„ბავშვობა“</span>
+          <p>მწერლის პირველი მოთხრობა, ტიფლისში დაწყებული</p>
+        </div>
+    </aside>
+  </div>
+</section>
+
+<section id="menu" class="section">
+  <div class="container">
+    <p class="section-kicker">მენიუ</p>
+    <h2>Bar · Kitchen · Cocktails</h2>
+
+    <div class="menu-flow">
+        <div class="menu-group">
+          <h3 class="menu-title">ლუდი <span class="badge">18+</span></h3>
+            <ul class="menu-list">
+                <li>
+                  <span class="menu-name">Herzeg</span>
+                    <span class="dots"></span><span class="price">5 / 6 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Wetzel</span>
+                    <span class="dots"></span><span class="price">5 / 6 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Argo</span>
+                    <span class="dots"></span><span class="price">5 / 6 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Bergbrau</span>
+                    <span class="dots"></span><span class="price">5 / 7 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Starnberger</span>
+                    <span class="dots"></span><span class="price">6 / 8 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">12 Marcvali</span>
+                    <span class="dots"></span><span class="price">7 / 9 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Germanuli</span>
+                    <span class="dots"></span><span class="price">5 / 6 ₾</span>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-group">
+          <h3 class="menu-title">კრაფტული ლუდი <span class="badge">18+</span></h3>
+            <ul class="menu-list">
+                <li>
+                  <span class="menu-name">Ich Will</span>
+                    <span class="dots"></span><span class="price">10 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Lost Aviator</span>
+                    <span class="dots"></span><span class="price">10 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Hawai’i</span>
+                    <span class="dots"></span><span class="price">10 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Foxxy</span>
+                    <span class="dots"></span><span class="price">10 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Quadrupel</span>
+                    <span class="dots"></span><span class="price">15 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Lager</span>
+                    <span class="dots"></span><span class="price">15 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Wheat beer</span>
+                    <span class="dots"></span><span class="price">15 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">IPA</span>
+                    <span class="dots"></span><span class="price">15 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Session IPA</span>
+                    <span class="dots"></span><span class="price">15 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Stout</span>
+                    <span class="dots"></span><span class="price">15 ₾</span>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-group">
+          <h3 class="menu-title">უალკოჰოლო ლუდი</h3>
+            <ul class="menu-list">
+                <li>
+                  <span class="menu-name">Ginger beer</span>
+                    <span class="dots"></span><span class="price">15 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Non alco APA</span>
+                    <span class="dots"></span><span class="price">15 ₾</span>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-group">
+          <h3 class="menu-title">სიდრი <span class="badge">18+</span></h3>
+            <ul class="menu-list">
+                <li>
+                  <span class="menu-name">Cider magnum</span>
+                    <span class="dots"></span><span class="price">15 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">ვაშლის კლასიკური<em>ნახევრად ტკბილი</em></span>
+                    <span class="dots"></span><span class="price">15 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">ვაშლი მსხლით</span>
+                    <span class="dots"></span><span class="price">15 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">ვაშლი ალუბლით</span>
+                    <span class="dots"></span><span class="price">15 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">ვაშლი შტოშით</span>
+                    <span class="dots"></span><span class="price">15 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">ვაშლი შავი მოცხარით</span>
+                    <span class="dots"></span><span class="price">15 ₾</span>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-group">
+          <h3 class="menu-title">მაგარი სასმელები <span class="badge">18+</span></h3>
+            <ul class="menu-list">
+                <li>
+                  <span class="menu-name">არაყი<em>Nemiroff 30 · Absolut 60 · Khortytsa 25 · Stolichnaya 50</em></span>
+                </li>
+                <li>
+                  <span class="menu-name">ჭაჭა<em>კლასიკური 0.5 ლ — 25 · სახლის — 5 / 10</em></span>
+                </li>
+                <li>
+                  <span class="menu-name">ვისკი<em>Jameson 15/100 · Jack Daniel’s 17/150/180 · Black Label 20/170</em></span>
+                </li>
+                <li>
+                  <span class="menu-name">ლიქიორი<em>Baileys 15 / 150</em></span>
+                </li>
+                <li>
+                  <span class="menu-name">რომი<em>Captain Morgan 15 / 100</em></span>
+                </li>
+                <li>
+                  <span class="menu-name">ჯინი<em>Bombay Sapphire 15 / 120</em></span>
+                </li>
+                <li>
+                  <span class="menu-name">კონიაკი<em>Askaneli 10/100 · Hennessy VSOP 30/300</em></span>
+                </li>
+                <li>
+                  <span class="menu-name">ტეკილა<em>Jose Cuervo Especial 15 / 150</em></span>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-group">
+          <h3 class="menu-title">კოქტეილები <span class="badge">18+</span></h3>
+            <ul class="menu-list">
+                <li>
+                  <span class="menu-name">Gin &amp; Tonic</span>
+                    <span class="dots"></span><span class="price">18 / 21 / 24 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Whiskey &amp; Cola</span>
+                    <span class="dots"></span><span class="price">18 / 21 / 24 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Vodka &amp; Tonic</span>
+                    <span class="dots"></span><span class="price">18 / 21 / 24 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">Cognac &amp; Cola</span>
+                    <span class="dots"></span><span class="price">18 / 21 / 24 ₾</span>
+                </li>
+            </ul>
+            <p class="menu-group-note">კოქტეილების აქტუალური ასორტიმენტი იკითხეთ ბარში.</p>
+        </div>
+        <div class="menu-group menu-wine">
+          <h3 class="menu-title">ღვინის კოლექცია <span class="badge">18+</span></h3>
+            <img alt="ქვევრის ღვინის ბოთლები თაროზე" loading="lazy" src="/assets/winebottles-caa6f89c.jpg" />
+            <p class="menu-group-note">ეწვიეთ ჩვენს მყუდრო სარდაფს და გაეცანით ჩვენს ღვინის კოლექციას. 🍷</p>
+        </div>
+        <div class="menu-group">
+          <h3 class="menu-title">კერძები</h3>
+            <ul class="menu-list">
+                <li>
+                  <span class="menu-name">მოხარშული სოსისი<em>პორცია ~800 გ</em></span>
+                    <span class="dots"></span><span class="price">35 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">ღორის ნეკნები<em>პორცია ~1000 გ</em></span>
+                    <span class="dots"></span><span class="price">50 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">შებოლილი ქათმის ფრთები</span>
+                    <span class="dots"></span><span class="price">20 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">შებოლილი ქათმის ბარკალი</span>
+                    <span class="dots"></span><span class="price">15 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">პური</span>
+                    <span class="dots"></span><span class="price">3 ₾</span>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-group">
+          <h3 class="menu-title">საწებლები</h3>
+            <ul class="menu-list">
+                <li>
+                  <span class="menu-name">მდოგვი</span>
+                    <span class="dots"></span><span class="price">3 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">საწებელი</span>
+                    <span class="dots"></span><span class="price">3 ₾</span>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-group">
+          <h3 class="menu-title">თევზი</h3>
+            <ul class="menu-list">
+                <li>
+                  <span class="menu-name">ქაფშია</span>
+                    <span class="dots"></span><span class="price">5 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">კაპარჭინა</span>
+                    <span class="dots"></span><span class="price">10 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">სიგი</span>
+                    <span class="dots"></span><span class="price">8 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">სკუმბრია</span>
+                    <span class="dots"></span><span class="price">15 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">რიბეცი</span>
+                    <span class="dots"></span><span class="price">6 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">ვობლა</span>
+                    <span class="dots"></span><span class="price">6 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">კალმარი</span>
+                    <span class="dots"></span><span class="price">17 ₾</span>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-group">
+          <h3 class="menu-title">წასახემსებელი</h3>
+            <ul class="menu-list">
+                <li>
+                  <span class="menu-name">სომხური სუჯუკი</span>
+                    <span class="dots"></span><span class="price">40 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">შებოლილი ჩეჩილი</span>
+                    <span class="dots"></span><span class="price">3.5 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">ქათმის ჯერკი</span>
+                    <span class="dots"></span><span class="price">15 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">ღორის ჯერკი</span>
+                    <span class="dots"></span><span class="price">17 ₾</span>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-group">
+          <h3 class="menu-title">უალკოჰოლო</h3>
+            <ul class="menu-list">
+                <li>
+                  <span class="menu-name">Cola / Fanta / Sprite / Tonic<em>ბოთლი 2.2 · ქილა 2 · შუშა 2.5</em></span>
+                </li>
+                <li>
+                  <span class="menu-name">ყავა თურქულად</span>
+                    <span class="dots"></span><span class="price">5 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">ჩაი</span>
+                    <span class="dots"></span><span class="price">4 / 10 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">ცივი ჩაი<em>გვირილა-მანგო · ატამი · მანგო-ანანასი</em></span>
+                    <span class="dots"></span><span class="price">2.5 – 3 ₾</span>
+                </li>
+                <li>
+                  <span class="menu-name">ხილის სასმელები<em>ვაშლი · ტყის კენკრა · გრეიფრუტი · ფორთოხალი · ალუბალი</em></span>
+                    <span class="dots"></span><span class="price">3.5 ₾</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <p class="menu-note">ფასები ლარშია. ბარში მენიუ ინგლისურადაც გვაქვს — ჰკითხეთ ბარმენს.</p>
+  </div>
+</section>
+
+<section class="quote">
+  <div class="container">
+    <blockquote>
+      „თუ ცხოვრების აზრს მაინც ეძებ, ის სადღაც პირველ და მეორე ჭიქას შორისაა.“
+      <cite>— თითქმის ლევ ტოლსტოი</cite>
+    </blockquote>
+  </div>
+</section>
+
+<section id="events" class="section">
+  <div class="container">
+    <p class="section-kicker">ღონისძიებები</p>
+    <h2>რა ხდება ტოლსტოის 13-ზე</h2>
+    <div class="events">
+        <article class="event">
+          <div class="event-photo">
+            <img alt="პროექტორი ბნელ ოთახში" loading="lazy" src="/assets/cinema-22df5e44.jpg" />
+          </div>
+          <div class="event-body">
+            <span class="event-day">ორშაბათი</span>
+            <h3>კინოს საღამო</h3>
+            <p>ორშაბათს კინოთი ვმკურნალობთ დიდ ეკრანზე. რას ვუყურებთ — გაიგებთ ჩვენს ინსტაგრამში.</p>
+          </div>
+        </article>
+        <article class="event">
+          <div class="event-photo">
+            <img alt="მიკროფონი პროჟექტორის შუქზე" loading="lazy" src="/assets/karaoke-bf841109.jpg" />
+          </div>
+          <div class="event-body">
+            <span class="event-day">ოთხშაბათი</span>
+            <h3>კარაოკე</h3>
+            <p>ყოველ ოთხშაბათს მიკროფონი სტუმრებს გადადის. იმღერეთ, რაც გინდათ — შანსონიდან Queen-მდე, გამბედაობას ბარში ვასხამთ.</p>
+          </div>
+        </article>
+        <article class="event">
+          <div class="event-photo">
+            <img alt="ცოცხალი კონცერტი ბარში: გიტარისტი მიკროფონთან" loading="lazy" src="/assets/blues-ddbc2cdb.jpg" />
+          </div>
+          <div class="event-body">
+            <span class="event-day">შაბათი</span>
+            <h3>კონცერტები</h3>
+            <p>ყოველ შაბათს — ცოცხალი მუსიკა ან დიჯეი-ფათი: ბლუზიდან ცეკვამდე, დახურვამდე. აფიშა — ჩვენს ინსტაგრამში; მოდით ადრე: სცენასთან ადგილებს პირველებს იკავებენ.</p>
+          </div>
+        </article>
+        <article class="event">
+          <div class="event-photo">
+            <img alt="სტუმრები უყურებენ ფეხბურთის ტრანსლაციას დიდ ეკრანზე ბარში" loading="lazy" src="/assets/sport-870e4937.jpg" />
+          </div>
+          <div class="event-body">
+            <span class="event-day">და კიდევ</span>
+            <h3>სპორტი, ქვიზები, თამაშები</h3>
+            <p>დიდ მატჩებს ერთდროულად ორ სართულზე ვაჩვენებთ, დროდადრო ვაწყობთ ქვიზებსა და სამაგიდო თამაშებს. ანონსები — ინსტაგრამში.</p>
+          </div>
+        </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <p class="section-kicker">შეფასებები</p>
+    <h2>სტუმრები ამბობენ</h2>
+    <div class="reviews">
+        <figure class="review">
+          <div class="stars" aria-label="5/5">★★★★★</div>
+          <blockquote>ერთ ჭიქაზე შემოვედით, დახურვამდე დავრჩით. ღვინის მარანში „უბრალოდ სანახავად“ ჩავედით — თავად მიხვდებით, რით დამთავრდა.</blockquote>
+          <figcaption>ნიკა, თბილისი</figcaption>
+        </figure>
+        <figure class="review">
+          <div class="stars" aria-label="5/5">★★★★★</div>
+          <blockquote>იშვიათი ბარი, სადაც მუსიკა არ ყვირის და თანამოსაუბრის გაგონება შეიძლება. ღორის ნეკნები კილოზე — აიღეთ ერთი ორისთვის, არ შეცდებით.</blockquote>
+          <figcaption>Olga, Kyiv</figcaption>
+        </figure>
+        <figure class="review">
+          <div class="stars" aria-label="5/5">★★★★★</div>
+          <blockquote>სახლის ჭაჭა და სუჯუკი — კომბინაცია, რომლისთვისაც ღირს მტკვრის გადალახვა. იდეალური ადგილი, დავბრუნდებით.</blockquote>
+          <figcaption>დათო, თბილისი</figcaption>
+        </figure>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="section">
+  <div class="container container-narrow">
+    <p class="section-kicker">FAQ</p>
+    <h2>ხშირი კითხვები</h2>
+    <div class="faq">
+        <details>
+          <summary>საჭიროა თუ არა მაგიდის დაჯავშნა?</summary>
+          <p>სამუშაო დღეებში ადგილები ჩვეულებრივ არის, პარასკევს, შაბათს და კარაოკეზე ოთხშაბათობით კი ჯობია დარეკოთ — <a href="tel:+995544997939">+995 544 99 79 39</a> — ან მოგვწეროთ ინსტაგრამში <a href="https://www.instagram.com/bartolstoi13" target="_blank" rel="noopener">@bartolstoi13</a>.</p>
+        </details>
+        <details>
+          <summary>რა ავიღო ლუდთან?</summary>
+          <p>კლასიკა — შებოლილი ფრთები ან თევზი: ქაფშიიდან კალმარამდე. დიდი კომპანიით აიღეთ ღორის ნეკნები — პორცია დაახლოებით ერთი კილოგრამია.</p>
+        </details>
+        <details>
+          <summary>გაქვთ უალკოჰოლო სასმელები?</summary>
+          <p>დიახ: უალკოჰოლო ლუდი (ჯინჯერი და APA), ცივი ჩაი — გვირილა-მანგო, ატამი, მანგო-ანანასი, — ხილის სასმელები, ჩაი და ყავა თურქულად.</p>
+        </details>
+        <details>
+          <summary>იღებთ ბარათებს?</summary>
+          <p>ვიღებთ ბარათებს, Apple Pay-სა და Google Pay-ს. ნაღდი ლარიც გვიყვარს.</p>
+        </details>
+    </div>
+  </div>
+</section>
+
+<section id="contacts" class="section section-alt">
+  <div class="container">
+    <p class="section-kicker">კონტაქტი</p>
+    <h2>როგორ გვიპოვოთ</h2>
+    <div class="contacts">
+      <div class="contact-card">
+        <h3>მისამართი</h3>
+        <p>ლევ ტოლსტოის ქ. 13<br>ჩუღურეთი, თბილისი</p>
+        <a class="btn btn-outline" href="https://maps.app.goo.gl/d6UiW9b7LP6tiaUaA" target="_blank" rel="noopener">რუკაზე გახსნა</a>
+      </div>
+      <div class="contact-card">
+        <h3>სამუშაო საათები</h3>
+        <p>ორშაბათი — კვირა<br>15:00 — 00:00</p>
+      </div>
+      <div class="contact-card">
+        <h3>ჯავშანი და კითხვები</h3>
+        <p>
+          <a href="tel:+995544997939">+995 544 99 79 39</a><br>
+          <span class="contact-note">ამავე ნომერზეა Telegram და WhatsApp</span>
+        </p>
+        <p class="contact-links">
+          <a href="https://t.me/+995544997939" target="_blank" rel="noopener">Telegram</a>
+          <a href="https://wa.me/995544997939" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="https://www.instagram.com/bartolstoi13" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/profile.php?id=61577458991324" target="_blank" rel="noopener">Facebook</a>
+          <a href="mailto:tolstoilev13@gmail.com">tolstoilev13@gmail.com</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END app/views/pages/home.html.erb -->
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <span class="logo">Tolstoi <span class="logo-num">13</span></span>
+          <p>ყველა ბედნიერი საღამო ერთმანეთს ჰგავს.<br>ჩვენი — აქ იწყება.</p>
+        </div>
+        <div class="footer-col">
+          <h4>მისამართი</h4>
+          <p>ლევ ტოლსტოის ქ. 13<br>ჩუღურეთი, თბილისი</p>
+        </div>
+        <div class="footer-col">
+          <h4>სამუშაო საათები</h4>
+          <p>ორშ — კვ<br>15:00 — 00:00</p>
+        </div>
+        <div class="footer-col">
+          <h4>კავშირი</h4>
+          <p>
+            <a href="tel:+995544997939">+995 544 99 79 39</a><br>
+            <a href="mailto:tolstoilev13@gmail.com">tolstoilev13@gmail.com</a><br>
+            <a href="https://www.instagram.com/bartolstoi13" target="_blank" rel="noopener">Instagram</a> ·
+            <a href="https://t.me/+995544997939" target="_blank" rel="noopener">Telegram</a> ·
+            <a href="https://wa.me/995544997939" target="_blank" rel="noopener">WhatsApp</a> ·
+            <a href="https://www.facebook.com/profile.php?id=61577458991324" target="_blank" rel="noopener">Facebook</a>
+          </p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 Tolstoi 13</span>
+        <span class="footer-18">18+ · ალკოჰოლის გადამეტებული მოხმარება აზიანებს თქვენს ჯანმრთელობას</span>
+      </div>
+    </footer>
+  </body>
+</html>
+<!-- END app/views/layouts/application.html.erb -->
