@@ -777,3 +777,5 @@ h2 { font-size: clamp(30px, 4.5vw, 46px); margin-bottom: 40px; }
   .lang-switch a,
   .lang-switch .active { font-size: 11px; }
 }
+
+.menu-list li.sold-out{opacity:.35;text-decoration:line-through}
